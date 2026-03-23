@@ -1,0 +1,29 @@
+
+---
+import './styles/global.css';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+
+const pageTitle = "Blog";
+---
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>{pageTitle}</title>
+    </head>
+    <body>
+        <Header />
+
+        <h1>My Astro Learning Blog</h1>
+        <p>This is where I will post about my journey learning Astro.</p>
+
+        <ol>
+            <li><a href="/posts/post-1/">게시글</a></li>
+            <li><a href="/posts/post-2/">게시글</a></li>
+            <li><a href="/posts/post-3/">게시글</a></li>
+        </ol>
+        <Footer />
+    </body>
+</html>
